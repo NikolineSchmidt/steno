@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f7f7f7;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.8em;
+}
+
+/* Tidslinje-navigation */
+.timeline-nav {
+    display: flex;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+/* Tidslinje-linje */
+.timeline-line {
+    flex-grow: 1; /* Udfylder det resterende rum */
+    height: 5px; /* Højden på linjen */
+    background-color: #3f51b5; /* Farve på linjen */
+    position: relative; /* For cirklernes position */
+}
+
+/* Cirkler for årstal */
+.circle {
+    width: 30px; /* Diameter på cirklen */
+    height: 30px; /* Diameter på cirklen */
+    border-radius: 50%; /* Gør cirklen rund */
+    background-color: #f0f0f0; /* Baggrundsfarve for cirklen */
+    border: 2px solid #3f51b5; /* Kantfarve */
+    position: absolute; /* For at placere cirklen over linjen */
+    top: -12px; /* Placer cirklen ovenfor linjen */
+    text-align: center; /* Centerer tekst i cirklen */
+    line-height: 30px; /* Centerer tekst vertikalt */
+}
+
+/* Tidslinje-container */
+.timeline-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Juster til venstre */
+}
+
+/* Hvert tidslinje-element */
+.timeline-item {
+    position: relative;
+    margin: 20px 0;
+    width: 100%; /* Giver en bredde til elementerne */
+}
+
+/* Stort årstal */
+.year {
+    font-size: 4em; /* Størrelse på årstallet */
+    font-weight: bold;
+    margin-right: 20px; /* Plads til billede til højre */
+    color: #3f51b5; /* Standard farve */
+}
+
+/* Specifikke farver for hver år */
+.item-1900 .year { color: #e91e63; } /* Farve for 1900 */
+.item-1920 .year { color: #ff9800; } /* Farve for 1920 */
+.item-1940 .year { color: #4caf50; } /* Farve for 1940 */
+.item-1950 .year { color: #2196f3; } /* Farve for 1950 */
+.item-1960 .year { color: #9c27b0; } /* Farve for 1960 */
+.item-1970 .year { color: #f44336; } /* Farve for 1970 */
+.item-1980 .year { color: #3f51b5; } /* Farve for 1980 */
+.item-1990 .year { color: #009688; } /* Farve for 1990 */
+.item-2000 .year { color: #8bc34a; } /* Farve for 2000 */
+.item-2010 .year { color: #cddc39; } /* Farve for 2010 */
+
+/* Billede sektion */
+.image-section {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.timeline-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Responsiv design */
+@media (max-width: 600px) {
+    .year {
+        font-size: 3em; /* Juster størrelse til mobile enheder */
+    }
+
+    .circle {
+        width: 20px; /* Mindre cirkel til mobile enheder */
+        height: 20px;
+        line-height: 20px;
+    }
+}
