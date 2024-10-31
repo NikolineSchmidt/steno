@@ -13,7 +13,8 @@ body {
 .top-text {
     font-size: 24px;
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: -20px;
+    margin-bottom: 50px;
 }
 
 
@@ -23,6 +24,8 @@ body {
 }
 
 .barbie-image {
+    width: 100%; 
+    height: auto;
     width: 400px; 
 }
 
@@ -94,4 +97,13 @@ body {
 
 .redirect-button:hover {
     background-color: #ff85c0; 
+}
+
+@media (max-width: 600px) {
+    .top-text {
+        font-size: 20px;
+    }
+    .popup {
+        width: 120px;
+    }
 }
