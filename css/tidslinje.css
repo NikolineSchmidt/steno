@@ -68,7 +68,7 @@ h1 {
 
 /* Specifikke farver for hver år */
 .item-1900 .year { color: #FFFF33 ; } /* Farve for 1900 */
-.item-1920 .year { color: #ffd700; } /* Farve for 1920 */
+.item-1920 .year { color: #b29205; } /* Farve for 1920 */
 .item-1940 .year { color: #0000ff; } /* Farve for 1940 */
 .item-1950 .year { color: #afeeee; } /* Farve for 1950 */
 .item-1960 .year { color: #00ff00; } /* Farve for 1960 */
