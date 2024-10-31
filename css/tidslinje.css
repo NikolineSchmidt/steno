@@ -7,7 +7,7 @@
 body {
     font-family: Arial, sans-serif;
     padding: 20px;
-    background-color: #f7f7f7;
+    background-color: #e1daca;
 }
 
 h1 {
@@ -91,6 +91,11 @@ h1 {
     height: auto;
     border-radius: 8px;
     margin-bottom: 20px;
+}
+
+.text-timeline {
+    text-align: left;
+    line-height: 1.5;
 }
 
 /* Responsiv design */
