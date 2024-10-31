@@ -16,33 +16,6 @@ h1 {
     font-size: 1.8em;
 }
 
-/* Tidslinje-navigation */
-.timeline-nav {
-    display: flex;
-    position: relative;
-    margin-bottom: 20px;
-}
-
-/* Tidslinje-linje */
-.timeline-line {
-    flex-grow: 1; /* Udfylder det resterende rum */
-    height: 5px; /* Højden på linjen */
-    background-color: #3f51b5; /* Farve på linjen */
-    position: relative; /* For cirklernes position */
-}
-
-/* Cirkler for årstal */
-.circle {
-    width: 30px; /* Diameter på cirklen */
-    height: 30px; /* Diameter på cirklen */
-    border-radius: 50%; /* Gør cirklen rund */
-    background-color: #f0f0f0; /* Baggrundsfarve for cirklen */
-    border: 2px solid #3f51b5; /* Kantfarve */
-    position: absolute; /* For at placere cirklen over linjen */
-    top: -12px; /* Placer cirklen ovenfor linjen */
-    text-align: center; /* Centerer tekst i cirklen */
-    line-height: 30px; /* Centerer tekst vertikalt */
-}
 
 /* Tidslinje-container */
 .timeline-container {
@@ -60,7 +33,7 @@ h1 {
 
 /* Stort årstal */
 .year {
-    font-size: 4em; /* Størrelse på årstallet */
+    font-size: 100px; /* Størrelse på årstallet */
     font-weight: bold;
     margin-right: 20px; /* Plads til billede til højre */
     color: #3f51b5; /* Standard farve */
@@ -97,6 +70,19 @@ h1 {
     text-align: left;
     line-height: 1.5;
 }
+
+.scroll-indicator {
+    position: fixed;
+    top: 0; /* Fastgør den til toppen af vinduet */
+    left: 0;
+    width: 5px; /* Bredden af indikatoren */
+    height: 0; /* Initial højde */
+    background-color: #918674; /* Indikatorens farve */
+    transition: height 0.2s ease; /* Glidende overgang for ændring i højden */
+    z-index: 1000; /* Sørg for at indikatoren er over andre elementer */
+}
+
+
 
 /* Responsiv design */
 @media (max-width: 600px) {

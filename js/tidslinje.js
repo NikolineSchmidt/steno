@@ -1,28 +1,13 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const circlesContainer = document.querySelector('.circles-container');
-    const years = [
-        "Ca. 1900",
-        "1920",
-        "1940",
-        "1950",
-        "1960",
-        "1970",
-        "1980",
-        "1990",
-        "2000",
-        "2010"
-    ];
+"use script";
+window.addEventListener('scroll', function() {
+    const scrollIndicator = document.querySelector('.scroll-indicator');
+    const scrollTop = window.scrollY; // Hvor meget der er scrollet ned
+    const windowHeight = window.innerHeight; // Højden på viewport
+    const documentHeight = document.body.scrollHeight; // Den totale højde af dokumentet
 
-    years.forEach((year, index) => {
-        const circle = document.createElement('div');
-        circle.classList.add('circle');
-        circle.textContent = year;
+    // Beregn procentdelen af scroll
+    const scrollPercent = (scrollTop / (documentHeight - windowHeight)) * 100;
 
-        // Placer cirklen korrekt
-        const position = (index / (years.length - 1)) * 100; // Procentdel af linjen
-        circle.style.left = `${position}%`;
-
-        // Tilføj cirklen til cirklernes container
-        circlesContainer.appendChild(circle);
-    });
+    // Opdater indikatorens højde
+    scrollIndicator.style.height = scrollPercent + '%'; // Indikatorens højde i procent
 });
