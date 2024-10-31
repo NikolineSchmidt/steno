@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbiedukke</title>
+    <link rel="stylesheet" href="css/barbie.css">
+    <script src="js/barbie.js" defer></script>
+</head>
+<body>
+    <div class="top-text">Klik for a få mere a vide om barbie.</div>
+    
+    
+    <div class="barbie-container">
+        <img src="img/barbie.png" alt="Barbie Doll" class="barbie-image">
+        
+        
+        <div class="hotspot head" onclick="showPopup(event, 'Det er Barbie\'s Hoved. Hendes hoved er så stort at hun ikke ville kunne holde det oppe.')"></div>
+        <div class="hotspot waist" onclick="showPopup(event, 'Det er Barbie\'s talje. Hendes talje er så smalt at hun ville falde sammen i virkeligheden.')"></div>
+        <div class="hotspot feet" onclick="showPopup(event, 'Det er Barbie\'s Fødder. Hendes fødder er så små at hun ikke ville kunne holde balance.')"></div>
+        
+       
+        <div id="popup" class="popup"></div>
+    </div>
+
+</body>
+</html>
