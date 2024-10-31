@@ -68,3 +68,23 @@ h1 {
     font-size: 1.2em;
     color: #c8433b;
 }
+
+.options label {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    display: block;
+    margin-top: 5px;
+}
+
+.options label.correct {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.options label.incorrect {
+    background-color: #f8d7da;
+    color: #721c24;
+}
