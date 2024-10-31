@@ -4,11 +4,18 @@ function showPopup(event, message) {
     popup.textContent = message;
 
    
-    popup.style.top = (event.target.offsetTop - popup.offsetHeight - 10) + 'px';
-    popup.style.left = (event.target.offsetLeft + event.target.offsetWidth / 2 - popup.offsetWidth / 2) + 'px';
-
+    const rect = event.target.getBoundingClientRect();
     
+  
+    popup.style.top = window.scrollY + rect.top - popup.offsetHeight - 10 + 'px';
+    popup.style.left = window.scrollX + rect.left + rect.width / 2 - popup.offsetWidth / 2 + 'px';
+
+   
     setTimeout(() => {
         popup.style.display = 'none';
     }, 3000);
+}
+
+function goToPage() {
+    window.location.href = 'barbieto.html'; 
 }
