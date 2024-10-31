@@ -1,3 +1,4 @@
+"use script";
 const quizData = [
     {
         image: "img/1950.webp",

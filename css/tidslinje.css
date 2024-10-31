@@ -82,6 +82,27 @@ h1 {
     z-index: 1000; /* Sørg for at indikatoren er over andre elementer */
 }
 
+#quiz-button-container {
+    text-align: center; /* Centrerer knappen */
+    margin-top: 20px; /* Giver lidt afstand ovenfor knappen */
+}
+
+#quiz-button {
+    display: inline-block;
+    padding: 10px 20px; /* Indvendig polstring */
+    font-size: 18px; /* Skriftstørrelse */
+    background-color: #918674; /* Baggrundsfarve */
+    color: white; /* Skriftfarve */
+    text-decoration: none; /* Ingen understregning */
+    border-radius: 5px; /* Rundede kanter */
+    transition: background-color 0.3s; /* Glidende overgang for baggrundsfarven */
+}
+
+#quiz-button:hover {
+    background-color: #c8433b; /* Mørkere farve ved hover */
+}
+
+
 
 
 /* Responsiv design */

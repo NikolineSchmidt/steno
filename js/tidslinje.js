@@ -11,3 +11,25 @@ window.addEventListener('scroll', function() {
     // Opdater indikatorens højde
     scrollIndicator.style.height = scrollPercent + '%'; // Indikatorens højde i procent
 });
+
+// Tilføj dette efter det eksisterende scroll-event
+window.addEventListener('scroll', function() {
+    const quizButton = document.getElementById('quiz-button-container');
+    const windowHeight = window.innerHeight;
+    const documentHeight = document.body.scrollHeight;
+    const scrollTop = window.scrollY;
+
+    // Tjek, om brugeren er tæt på bunden af siden
+    if (scrollTop + windowHeight >= documentHeight - 100) { // 100px fra bunden
+        quizButton.style.display = 'block'; // Vis knappen
+    } else {
+        quizButton.style.display = 'none'; // Skjul knappen
+    }
+});
+
+// Skjul knappen ved indlæsning
+document.addEventListener('DOMContentLoaded', function() {
+    const quizButton = document.getElementById('quiz-button-container');
+    quizButton.style.display = 'none'; // Start med skjult
+});
+
