@@ -1,3 +1,5 @@
+"use strict;"
+
 function showPopup(event, message) {
     const popup = document.getElementById('popup');
     popup.style.display = 'block';
