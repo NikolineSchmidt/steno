@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbiedukke</title>
+    <link rel="stylesheet" href="css/barbie.css">
+    <script src="js/barbie.js" defer></script>
+</head>
+<body>
+    <div class="top-text">Klik på Barbie for at få mere af vide!</div>
+    
+    <div class="barbie-container">
+        <img src="img/barbie.png" alt="Barbie Doll" class="barbie-image">
+        
+
+        <div class="indicator head-indicator"></div>
+        <div class="indicator waist-indicator"></div>
+        <div class="indicator feet-indicator"></div>  
+        
+  
+        <div class="hotspot head" onclick="showPopup(event, 'Det er Barbie\'s Hoved. ')" style="top: 5%; left: 50%; width: 30px; height: 30px;"></div>
+        <div class="hotspot waist" onclick="showPopup(event, 'Det er Barbie\'s Talje ')" style="top: 50%; left: 50%; width: 40px; height: 20px;"></div>
+        <div class="hotspot feet" onclick="showPopup(event, 'Det er Barbie\'s Fødder')" style="top: 85%; left: 50%; width: 40px; height: 20px;"></div>
+        
+        <div id="popup" class="popup"></div>
+    </div>
+   
+    <button class="redirect-button" onclick="goToPage()">Fortsæt videre</button>
+</body>
+</html>
