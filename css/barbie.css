@@ -7,7 +7,7 @@ body {
     height: 100vh;
     margin: 0;
     text-align: center;
-    background-color: #ffe4e1; 
+    background-color: #E1DACA; 
 }
 
 .top-text {
@@ -43,7 +43,7 @@ body {
     height: 30px;
     border-radius: 50%;
     background-color: rgba(255, 105, 180, 0.5); 
-    border: 2px solid #ff69b4;
+    border: 2px solid #918674;
     animation: pulse 1.5s infinite; 
 }
 
@@ -89,14 +89,14 @@ body {
     padding: 10px 20px;
     font-size: 16px;
     color: #fff;
-    background-color: #ff69b4; 
+    background-color: #918674; 
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
 .redirect-button:hover {
-    background-color: #ff85c0; 
+    background-color: #918674; 
 }
 
 @media (max-width: 600px) {
