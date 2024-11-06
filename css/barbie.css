@@ -1,3 +1,4 @@
+/* Grundlæggende styling for body */
 body {
     display: flex;
     flex-direction: column;
@@ -10,51 +11,62 @@ body {
     background-color: #E1DACA; 
 }
 
+/* Styling for den øverste tekst */
 .top-text {
     font-size: 24px;
     font-weight: bold;
     margin-top: -20px;
     margin-bottom: 50px;
+    color: #918674; 
+    line-height: 30px; 
 }
 
+/* Styling for Barbie-logoet */
+.barbie-logo {
+    width: 90px; 
+    vertical-align: middle; 
+    margin-left: 5px; 
+}
 
+/* Styling af containeren der indeholder Barbie-billedet */
 .barbie-container {
     position: relative;
     display: inline-block;
 }
 
+/* Styling af Barbie-billedet */
 .barbie-image {
     width: 100%; 
     height: auto;
     width: 400px; 
 }
 
-
+/* Hotspot (interaktive områder på Barbie) */
 .hotspot {
     position: absolute;
-    background-color: rgba(255, 255, 255, 0); 
-    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0); /* Gennemsigtig baggrund */
+    cursor: pointer; /* Cursoren ændres til en hånd for at vise, at det er klikbart */
 }
 
-
+/* Styling for indikatorerne, der viser hotspots */
 .indicator {
     position: absolute;
     width: 30px;
     height: 30px;
-    border-radius: 50%;
+    border-radius: 50%; /* Gør indikatorerne runde */
     background-color: rgba(255, 105, 180, 0.5); 
-    border: 2px solid #918674;
+    border: 2px solid #918674; /* Kantfarve */
     animation: pulse 1.5s infinite; 
 }
 
-
+/* Animering for indikatorernes pulserende effekt */
 @keyframes pulse {
     0% { transform: scale(1); opacity: 0.8; }
     50% { transform: scale(1.2); opacity: 0.5; }
     100% { transform: scale(1); opacity: 0.8; }
 }
 
-
+/* Position af indikatorerne for forskellige hotspots */
 .head-indicator {
     top: 5%; left: 50%; transform: translateX(-50%);
 }
@@ -67,43 +79,45 @@ body {
     top: 85%; left: 50%; transform: translateX(-50%);
 }
 
-
+/* Styling af pop-up vinduet der vises ved klik */
 .popup {
     display: none;
     position: absolute;
-    background-color: #333;
-    color: #fff;
+    background-color: #918674; 
+    color: #E1DACA; 
     border-radius: 5px;
     padding: 10px;
     font-size: 14px;
-    width: 160px;
-    text-align: center;
-    z-index: 10;
+    width: 160px; /* Størrelsen på pop-up boksen */
+    text-align: left;
+    z-index: 10; 
 }
 
-
+/* Styling af knappen til at gå videre */
 .redirect-button {
     position: fixed;
     bottom: 20px;
     right: 20px;
     padding: 10px 20px;
     font-size: 16px;
-    color: #fff;
+    color: #E1DACA; 
     background-color: #918674; 
     border: none;
     border-radius: 5px;
-    cursor: pointer;
+    cursor: pointer; 
 }
 
+/* Hover-effekt på knappen */
 .redirect-button:hover {
     background-color: #918674; 
 }
 
+/* Responsiv styling for mindre skærme */
 @media (max-width: 600px) {
     .top-text {
-        font-size: 20px;
+        font-size: 20px; /* Juster tekststørrelse på små skærme */
     }
     .popup {
-        width: 120px;
+        width: 120px; /* Juster pop-up bredden på små skærme */
     }
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,24 +8,30 @@
     <script src="js/barbie.js" defer></script>
 </head>
 <body>
-    <div class="top-text">Klik på Barbie for at få mere af vide!</div>
+    <!-- Toptekst, som inkluderer Barbie-logoet og en kort introduktion til indholdet -->
+    <div class="top-text">
+        Klik på <img src="img/barbie-logo.webp" alt="Barbie Logo" class="barbie-logo"> for at udforske urealistiske skønhedsidealer!
+    </div>
     
     <div class="barbie-container">
+        <!-- Billede af Barbie-dukke -->
         <img src="img/barbie.png" alt="Barbie Doll" class="barbie-image">
         
-
+        <!-- Visuelle indikatorer for de forskellige hotspots på Barbie-dukke -->
         <div class="indicator head-indicator"></div>
         <div class="indicator waist-indicator"></div>
         <div class="indicator feet-indicator"></div>  
         
-  
+        <!-- Hotspots på Barbie, der viser information, når de klikkes på -->
         <div class="hotspot head" onclick="showPopup(event, 'Dette er Barbie\'s Hoved. Barbies hals er lang og slank, hvilket ikke kan støtte vægten af et rigitgt menneskes hoved. ')" style="top: 5%; left: 50%; width: 30px; height: 30px;"></div>
         <div class="hotspot waist" onclick="showPopup(event, 'Dette er Barbie\'s Talje. 40-45 cm talje, ville have svært ved at huse barbies indre organger ')" style="top: 50%; left: 50%; width: 40px; height: 20px;"></div>
         <div class="hotspot feet" onclick="showPopup(event, 'Dette er Barbie\'s Fødder. De er så små at hun ikke ville kunne holde balancen, hvis hun var virkelig.')" style="top: 85%; left: 50%; width: 40px; height: 20px;"></div>
         
+        <!-- Popup-boks til visning af information om Barbie -->
         <div id="popup" class="popup"></div>
     </div> 
-   
+    
+    <!-- Button for at fortsætte til næste side -->
     <button class="redirect-button" onclick="goToPage()">Fortsæt videre</button>
 </body>
 </html>
