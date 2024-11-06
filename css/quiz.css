@@ -4,37 +4,42 @@
     box-sizing: border-box;
 }
 
+/* Grundlæggende styling for body-elementet */
 body {
     font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    background-color: #e1daca;
+    background-color: #e1daca; 
 }
 
+/* Styling for hovedoverskriften */
 h1 {
     margin-bottom: 20px;
     font-size: 1.5em;
-    color: #c8433b;
+    color: #c8433b; 
 }
 
+/* Quiz-containeren, der indeholder spørgsmålene */
 #quiz-container {
     display: flex;
     flex-direction: column;
     gap: 20px;
     width: 100%;
-    max-width: 600px;
+    max-width: 600px; 
 }
 
+/* Styling for hvert quiz-element (spørgsmål) */
 .quiz-item {
     padding: 15px;
     border: 1px solid #ddd;
     border-radius: 8px;
-    background-color: #fff;
+    background-color: #e1daca;
     text-align: center;
 }
 
+/* Styling for billeder i quiz'en */
 .quiz-item img {
     width: 100%;
     height: auto;
@@ -42,16 +47,18 @@ h1 {
     margin-bottom: 10px;
 }
 
+/* Styling for valgmuligheder (labels) */
 .options label {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     cursor: pointer;
-    background-color: #f0f0f0;
+    background-color: #fff; 
     display: block;
     margin-top: 5px;
 }
 
+/* Styling for submit-knappen */
 #submit-btn {
     margin-top: 20px;
     padding: 10px 20px;
@@ -59,32 +66,24 @@ h1 {
     cursor: pointer;
     border: none;
     border-radius: 5px;
-    background-color: #c8433b;
-    color: #fff;
+    background-color: #c8433b; 
+    color: #fff; 
 }
 
+/* Styling for resultatet */
 #result {
     margin-top: 20px;
     font-size: 1.2em;
     color: #c8433b;
 }
 
-.options label {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    cursor: pointer;
-    background-color: #f0f0f0;
-    display: block;
-    margin-top: 5px;
-}
-
+/* Styling for korrekte og forkerte svar */
 .options label.correct {
     background-color: #d4edda;
-    color: #155724;
+    color: #155724; /* Grøn farve for korrekt svar */
 }
 
 .options label.incorrect {
     background-color: #f8d7da;
-    color: #721c24;
+    color: #721c24; /* Rød farve for forkert svar */
 }
