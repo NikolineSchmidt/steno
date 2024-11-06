@@ -1,112 +1,113 @@
+/* Generelle indstillinger for alle elementer */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; 
 }
 
+/* Stilarter for hele siden */
 body {
-    font-family: Arial, sans-serif;
-    padding: 20px;
-    background-color: #e1daca;
+    font-family: Arial, sans-serif; 
+    padding: 20px; 
+    background-color: #e1daca; 
 }
 
+/* Overskrift for tidslinjen */
 h1 {
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 1.8em;
-    color: #918674;
+    text-align: center; 
+    margin-bottom: 30px; 
+    font-size: 1.8em; 
+    color: #918674; 
 }
-
 
 /* Tidslinje-container */
 .timeline-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* Juster til venstre */
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start; 
 }
 
 /* Hvert tidslinje-element */
 .timeline-item {
-    position: relative;
-    margin: 20px 0;
-    width: 100%; /* Giver en bredde til elementerne */
+    position: relative; 
+    margin: 20px 0; 
+    width: 100%; 
 }
 
 /* Stort årstal */
 .year {
-    font-size: 100px; /* Størrelse på årstallet */
-    font-weight: bold;
-    margin-right: 20px; /* Plads til billede til højre */
-    color: #3f51b5; /* Standard farve */
+    font-size: 100px; 
+    font-weight: bold; 
+    margin-right: 20px; 
 }
 
-/* Specifikke farver for hver år */
-.item-1900 .year { color: #f99128 ; } /* Farve for 1900 */
-.item-1920 .year { color: #b29205; } /* Farve for 1920 */
-.item-1940 .year { color: #0000ff; } /* Farve for 1940 */
-.item-1950 .year { color: #88ecec; } /* Farve for 1950 */
-.item-1960 .year { color: #0ced0c; } /* Farve for 1960 */
-.item-1970 .year { color: #daa520; } /* Farve for 1970 */
-.item-1980 .year { color: #ff64b4; } /* Farve for 1980 */
-.item-1990 .year { color: #8b0000; } /* Farve for 1990 */
-.item-2000 .year { color: #9370db; } /* Farve for 2000 */
-.item-2010 .year { color: #000080; } /* Farve for 2010 */
+/* Farver for hvert år */
+.item-1900 .year { color: #f99128; } 
+.item-1920 .year { color: #b29205; } 
+.item-1940 .year { color: #0000ff; } 
+.item-1950 .year { color: #88ecec; } 
+.item-1960 .year { color: #0ced0c; } 
+.item-1970 .year { color: #daa520; } 
+.item-1980 .year { color: #ff64b4; } 
+.item-1990 .year { color: #8b0000; } 
+.item-2000 .year { color: #9370db; } 
+.item-2010 .year { color: #000080; } 
 
-/* Billede sektion */
+/* Billede sektion til hvert tidslinje-element */
 .image-section {
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
+    width: 100%; 
+    max-width: 800px; 
+    margin: 0 auto; 
+    text-align: center; 
 }
 
+/* Billede i tidslinje */
 .timeline-image {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 20px;
+    width: 100%; 
+    height: auto; 
+    border-radius: 8px; /* Rundede hjørner */
+    margin-bottom: 20px; 
 }
 
+/* Tekst tilknyttet hvert billede */
 .text-timeline {
-    text-align: left;
-    line-height: 1.5;
+    text-align: left; 
+    line-height: 1.5; 
 }
 
+/* Scroll-indikator til visning af scroll position */
 .scroll-indicator {
-    position: fixed;
-    top: 0; /* Fastgør den til toppen af vinduet */
+    position: fixed; 
+    top: 0; 
     left: 0;
-    width: 5px; /* Bredden af indikatoren */
-    height: 0; /* Initial højde */
-    background-color: #918674; /* Indikatorens farve */
-    transition: height 0.2s ease; /* Glidende overgang for ændring i højden */
-    z-index: 1000; /* Sørg for at indikatoren er over andre elementer */
+    width: 5px; 
+    height: 0; 
+    background-color: #918674; 
+    transition: height 0.2s ease; 
+    z-index: 1000;
 }
 
+/* Knappen til quiz */
 #quiz-button-container {
-    text-align: center; /* Centrerer knappen */
-    margin-top: 20px; /* Giver lidt afstand ovenfor knappen */
+    text-align: center; 
+    margin-top: 20px; 
 }
 
 #quiz-button {
     display: inline-block;
-    padding: 10px 20px; /* Indvendig polstring */
-    font-size: 18px; /* Skriftstørrelse */
-    background-color: #918674; /* Baggrundsfarve */
-    color: white; /* Skriftfarve */
-    text-decoration: none; /* Ingen understregning */
-    border-radius: 5px; /* Rundede kanter */
-    transition: background-color 0.3s; /* Glidende overgang for baggrundsfarven */
+    padding: 10px 20px; 
+    font-size: 18px; 
+    background-color: #918674; 
+    color: #e1daca; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    transition: background-color 0.3s; 
 }
 
-
-
-
-
-/* Responsiv design */
+/* Responsiv design til små skærme */
 @media (max-width: 600px) {
     .year {
-        font-size: 3em; /* Juster størrelse til mobile enheder */
+        font-size: 3em; /* Mindre skrifttype på mobile enheder */
     }
 
     .circle {
