@@ -7,7 +7,7 @@ body {
     height: 100vh;
     margin: 0;
     text-align: center;
-    background-color: #ffe4e1; 
+    background-color: #E1DACA; 
 }
 
 .go-back-button {
@@ -17,14 +17,14 @@ body {
     padding: 10px 20px;
     font-size: 16px;
     color: #fff;
-    background-color: #ff69b4; 
+    background-color: #918674; 
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
 .go-back-button:hover {
-    background-color: #ff85c0; 
+    background-color: #918674; 
 }
 
 iframe {
