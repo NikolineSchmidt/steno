@@ -1,27 +1,43 @@
-"use strict;"
+"use strict";
 
-function goToPage() {
-    window.location.href = 'barbietre.html'; 
+// Funktion til at vise "Fortsæt videre" knappen, når brugeren er nederst på siden
+function showRedirectButton() {
+    const redirectButton = document.querySelector('.redirect-button');
+    if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+        redirectButton.style.display = 'flex'; // Brug flex for at få knappen til at blive vist korrekt
+    } else {
+        redirectButton.style.display = 'none'; // Skjul knappen, hvis ikke i bunden
+    }
 }
 
+// Funktion til at vise "Tilbage" knappen, når brugeren er øverst på siden
+function showGoBackButton() {
+    const goBackButton = document.querySelector('.go-back-button');
+    if (window.scrollY === 0) {
+        goBackButton.style.display = 'flex'; // Brug flex for at få knappen til at blive vist korrekt
+    } else {
+        goBackButton.style.display = 'none'; // Skjul knappen, hvis ikke øverst
+    }
+}
 
+// Lyt efter scroll-events
+window.addEventListener('scroll', function() {
+    showRedirectButton(); // Tjek om vi er i bunden
+    showGoBackButton();   // Tjek om knappen skal vises ved indlæsning
+});
+
+// Tjek for initial placering af knapperne, når siden loader
+document.addEventListener('DOMContentLoaded', function() {
+    showRedirectButton();  // Tjek for om knappen skal vises, når siden først indlæses
+    showGoBackButton();    // Tjek for om knappen skal vises ved indlæsning
+});
+
+// Funktion til at navigere til næste side
+function goToPage() {
+    window.location.href = 'barbietre.html';
+}
+
+// Funktion til at gå tilbage til forrige side
 function goBack() {
     window.history.back();
 }
-
- // Vælg knappen
- const redirectButton = document.querySelector('.redirect-button');
-
- // Funktion til at tjekke om man er i bunden af siden
- function checkScrollPosition() {
-     if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
-         // Hvis vi er i bunden af siden, vis knappen
-         redirectButton.classList.add('show');
-     } else {
-         // Hvis vi scroller væk fra bunden, skjul knappen
-         redirectButton.classList.remove('show');
-     }
- }
-
- // Lyt til scroll-eventen
- window.addEventListener('scroll', checkScrollPosition);

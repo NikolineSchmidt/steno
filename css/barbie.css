@@ -98,18 +98,24 @@ body {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    padding: 10px 20px;
-    font-size: 16px;
+    width: 50px;  /* Knappens bredde */
+    height: 50px; /* Knappens højde */
+    border-radius: 50%; /* Gør knappen rund */
+    display: flex;
+    align-items: center; /* Centrerer teksten vertikalt */
+    justify-content: center; /* Centrerer teksten horisontalt */
+    font-size: 18px;
     color: #E1DACA; 
     background-color: #918674; 
     border: none;
-    border-radius: 5px;
-    cursor: pointer; 
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold; /* Gør teksten fed */
 }
 
 /* Hover-effekt på knappen */
 .redirect-button:hover {
-    background-color: #918674; 
+    background-color: #7A6A4C; /* Mørkere farve på hover */
 }
 
 /* Responsiv styling for mindre skærme */
@@ -119,5 +125,11 @@ body {
     }
     .popup {
         width: 120px; /* Juster pop-up bredden på små skærme */
+    }
+
+    .redirect-button {
+        width: 45px;  /* Mindre knap på mobil */
+        height: 45px; /* Mindre knap på mobil */
+        font-size: 14px;  /* Mindre tekst på mobil */
     }
 }
