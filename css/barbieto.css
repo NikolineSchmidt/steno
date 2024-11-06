@@ -11,7 +11,7 @@ body {
 }
 
 .redirect-button {
-    position: fixed;
+    position: absolute;
     bottom: 20px;
     right: 20px;
     padding: 10px 20px;
@@ -21,14 +21,16 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    display: none; /* Skjul knappen som standard */
 }
 
-.redirect-button:hover {
-    background-color: #918674; 
+.redirect-button.show {
+    display: block; /* Vis knappen, når klassen "show" tilføjes */
 }
+
 
 .go-back-button {
-    position: fixed;
+    position: absolute;
     top: 20px; 
     left: 20px; 
     padding: 10px 20px;
@@ -40,9 +42,7 @@ body {
     cursor: pointer;
 }
 
-.go-back-button:hover {
-    background-color: #918674; 
-}
+
 
 .container {
     display: flex;
