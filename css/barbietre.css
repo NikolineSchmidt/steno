@@ -16,27 +16,31 @@ p {
     color: #918674;
 }
 
-/* Styling af knappen for at gå tilbage */
+/* Styling for Material Symbol-ikonet i knappen */
+.material-symbols-outlined {
+    font-variation-settings: 
+      'FILL' 0, 
+      'wght' 700, /* Gør pilen bold */
+      'GRAD' 0, 
+      'opsz' 24;
+    color: #918674; /* Farve på pilen */
+}
+
+/* Opdateret styling af knappen for at gå tilbage */
 .go-back-button {
     position: fixed;
     top: 20px;
     left: 20px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+    background-color: transparent; /* Fjern baggrundsfarve */
+    border: none; /* Fjern kant */
+    cursor: pointer;
+    color: #918674;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 18px;
-    color: #E1DACA;
-    background-color: #918674;
-    border: none;
-    cursor: pointer;
-}
-
-/* Hover effekt for knappen */
-.go-back-button:hover {
-    background-color: #918674;
+    font-size: 24px;
+    width: auto;
+    height: auto;
 }
 
 /* Styling af iframe for at gøre den responsiv */
@@ -73,13 +77,6 @@ h1 img {
 
 /* Responsivitet for mobil */
 @media (max-width: 600px) {
-    /* Justering af knappen for mobil */
-    .go-back-button {
-        width: 40px;
-        height: 40px;
-        font-size: 14px;
-    }
-
     /* Justering af overskriften for mobil */
     h1 {
         font-size: 1.5rem;

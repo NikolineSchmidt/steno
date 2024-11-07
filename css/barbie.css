@@ -93,30 +93,31 @@ body {
     z-index: 10; 
 }
 
-/* Styling af knappen til at gå videre */
+/* Opdatering af knappen til at gå videre */
 .redirect-button {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    width: 50px;  /* Knappens bredde */
-    height: 50px; /* Knappens højde */
-    border-radius: 50%; /* Gør knappen rund */
     display: flex;
-    align-items: center; /* Centrerer teksten vertikalt */
-    justify-content: center; /* Centrerer teksten horisontalt */
-    font-size: 18px;
-    color: #E1DACA; 
-    background-color: #918674; 
+    align-items: center; /* Centrerer ikonet vertikalt */
+    justify-content: center; /* Centrerer ikonet horisontalt */
+    font-size: 24px; /* Justerer størrelsen på ikonet */
+    color: #918674; /* Farve til ikonet */
+    background-color: transparent; /* Gennemsigtig baggrund */
     border: none;
     cursor: pointer;
     text-align: center;
-    font-weight: bold; /* Gør teksten fed */
 }
 
-/* Hover-effekt på knappen */
-.redirect-button:hover {
-    background-color: #7A6A4C; /* Mørkere farve på hover */
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 700, /* Gør ikonet bold */
+  'GRAD' 0,
+  'opsz' 24;
+  color: #918674; /* Farve på pilen */
 }
+
 
 /* Responsiv styling for mindre skærme */
 @media (max-width: 600px) {
