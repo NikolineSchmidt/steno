@@ -33,11 +33,31 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Funktion til at navigere til næste side
+// Funktion til at omdirigere til en ny side
 function goToPage() {
-    window.location.href = 'barbietre.html';
+    playSound();
+
+    
+    setTimeout(() => {
+        window.location.href = "barbietre.html";
+    }, 500);
 }
 
-// Funktion til at gå tilbage til forrige side
+
 function goBack() {
-    window.history.back();
+    playSound();
+
+  
+    setTimeout(() => {
+        window.history.back();
+    }, 500);
+}
+
+function playSound() {
+    const sound = document.getElementById("button-sound");
+    if (sound) {
+        sound.play().catch((error) => {
+            console.error("Audio playback failed:", error);
+        });
+    }
 }

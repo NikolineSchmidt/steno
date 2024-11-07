@@ -21,5 +21,18 @@ function showPopup(event, message) {
 
 // Funktion til at omdirigere til en ny side
 function goToPage() {
-    window.location.href = 'barbieto.html'; 
+    
+    const sound = document.getElementById("button-sound");
+    
+    
+    if (sound) {
+        sound.play().catch((error) => {
+            console.error("Audio playback failed:", error);
+        });
+    }
+
+   
+    setTimeout(() => {
+        window.location.href = "barbieto.html"; 
+    }, 500); 
 }

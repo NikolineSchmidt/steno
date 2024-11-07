@@ -2,5 +2,19 @@
 
 // Funktion til at gå tilbage i browserens historik
 function goBack() {
-    window.history.back();  // Går tilbage til den forrige side i browserens historik
+    playSound();
+
+  
+    setTimeout(() => {
+        window.history.back();
+    }, 500);
+}
+
+function playSound() {
+    const sound = document.getElementById("button-sound");
+    if (sound) {
+        sound.play().catch((error) => {
+            console.error("Audio playback failed:", error);
+        });
+    }
 }
