@@ -11,3 +11,4 @@ For at engagere vores publikum har vi også udviklet en quiz, der udfordrer delt
 Derudover har vi skabt en "Barbie"-figur, der visualiserer de urealistiske standarder for skønhed. Figuren illustrerer, hvordan dens proportioner, såsom for små fødder, er uopnåelige for de fleste og skaber et urealistisk billede af, hvordan en kvindekrop bør se ud. Dette indspark vil hjælpe med at belyse de fejl og begrænsninger, der følger med at stræbe efter disse urealistiske idealer.
 
 Gennem denne udstilling håber vi at inspirere til en kritisk dialog om kropsidealer og deres indflydelse på vores samfund og individuelle liv.
+

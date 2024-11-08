@@ -61,3 +61,23 @@ function playSound() {
         });
     }
 }
+
+// Hent data fra barbieData.json
+fetch('barbieData.json')
+  .then(response => response.json())  // Konverter responsen til JSON
+  .then(data => {
+      // Opdater titel i tekstboksen
+      const titleElement = document.querySelector('.text-box h2');
+      titleElement.innerHTML = `<img src="img/barbie-logo.webp" alt="Barbie Logo" class="barbie-logo"> ${data.title}`;
+
+      // Opdater indholdet i tekstboksen
+      const contentElement = document.querySelector('.text-box');
+      data.content.forEach(paragraph => {
+          const p = document.createElement('p');
+          p.textContent = paragraph;
+          contentElement.appendChild(p);
+      });
+  })
+  .catch(error => {
+      console.error('Error fetching data:', error);
+  });

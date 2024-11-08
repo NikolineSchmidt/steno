@@ -70,7 +70,7 @@ h2 img {
 }
 
 /* Justering af p elementer i tekstboksen */
-.text-box p {
+.text-box h2 {
     line-height: 1.6; 
     margin-bottom: 15px; 
 }
