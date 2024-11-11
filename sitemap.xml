@@ -1,0 +1,38 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+    <!-- Tidslinjeside -->
+    <url>
+        <loc>https://steno.nikolineschmidt.dk/tidslinje.html</loc>
+        <lastmod>2024-11-08T11:23:47+00:00</lastmod>
+        <priority>1.00</priority>
+    </url>
+
+    <!-- Quizside -->
+    <url>
+        <loc>https://steno.nikolineschmidt.dk/quiz.html</loc>
+        <lastmod>2024-11-08T11:23:47+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+
+    <!-- Barbie hovedside -->
+    <url>
+        <loc>https://steno.nikolineschmidt.dk/barbie.html</loc>
+        <lastmod>2024-11-08T11:23:47+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    
+    <!-- Barbie konsekvensside -->
+    <url>
+        <loc>https://steno.nikolineschmidt.dk/barbieto.html</loc>
+        <lastmod>2024-11-08T11:23:47+00:00</lastmod>
+        <priority>0.70</priority>
+    </url>
+    
+    <!-- Barbie videoside -->
+    <url>
+        <loc>https://steno.nikolineschmidt.dk/barbietre.html</loc>
+        <lastmod>2024-11-08T11:23:47+00:00</lastmod>
+        <priority>0.70</priority>
+    </url>
+
+</urlset>
